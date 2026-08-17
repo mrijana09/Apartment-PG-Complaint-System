@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>PG Complaint Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Apartment & PG Complaint System</h2>
+        <form id="complaintForm" class="card">
+            <input type="text" id="residentName" placeholder="Name" required>
+            <input type="text" id="roomNumber" placeholder="Room Number" required>
+            <input type="text" id="contactInfo" placeholder="Contact Info" required>
+            <select id="category" required>
+                <option value="">Category</option>
+                <option value="Electricity">Electricity</option>
+                <option value="Plumbing">Plumbing</option>
+                <option value="Internet">Internet</option>
+            </select>
+            <select id="priority" required>
+                <option value="Low">Low</option>
+                <option value="Medium" selected>Medium</option>
+                <option value="High">High</option>
+            </select>
+            <textarea id="description" placeholder="Description" required></textarea>
+            <textarea id="additionalInfo" placeholder="Additional Details (Optional)"></textarea>
+            <button type="submit">Submit Complaint</button>
+        </form>
+        
+        <div class="card">
+            <input type="text" id="searchInput" placeholder="Search...">
+            <select id="filterCategory">
+                <option value="All">All Categories</option>
+                <option value="Electricity">Electricity</option>
+                <option value="Plumbing">Plumbing</option>
+                <option value="Internet">Internet</option>
+            </select>
+            <div id="complaintsList"></div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

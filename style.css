@@ -1,0 +1,57 @@
+body { 
+    font-family: sans-serif; 
+    background: #f3f4f6; 
+    margin: 0; 
+    padding: 20px; 
+}
+.container { 
+    max-width: 800px; 
+    margin: 0 auto; 
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px; 
+}
+.card { 
+    background: #fff; 
+    padding: 20px; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+}
+input, select, textarea, button { 
+    width: 100%; 
+    padding: 8px; 
+    margin-bottom: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+}
+button { 
+    background: #2563eb; 
+    color: #fff; 
+    border: none; 
+    font-weight: bold; 
+    cursor: pointer; 
+}
+button:hover { 
+    background: #1d4ed8; 
+}
+.complaint-card { 
+    border-bottom: 1px solid #eee; 
+    padding: 10px 0; 
+    font-size: 0.9em; }
+.complaint-card:last-child { 
+    border: none; 
+}
+.complaint-card h3 { 
+    margin: 0 0 5px; 
+    font-size: 1.1em; 
+    color: #111827; }
+span {
+     font-size: 0.8em; 
+     color: #6b7280; 
+    }
+@media (max-width: 600px) { 
+    .container { 
+        grid-template-columns: 1fr; 
+    } 
+}
